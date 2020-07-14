@@ -7,7 +7,7 @@ class EmailAddressParser
   end 
   
   def parse 
-    csv_emails.split.collect do |address|
+    csv_emails.split.collect do |address| address.split
 end 
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
